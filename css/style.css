@@ -1,0 +1,235 @@
+
+
+
+:root{
+    --green: rgb(0, 158, 129) ;
+    --white: aliceblue;
+    --smoke: rgb(44, 97, 147);
+}
+body{
+    background-color: rgb(11, 9, 27);
+    overflow: hidden;
+}
+
+#start{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 2200px;
+    width: 2500px;
+    background-color: rgba(240, 248, 255, 0.058);
+    backdrop-filter: blur(50px) ;
+    z-index: 1;
+    
+}
+#playicon{
+    fill: aliceblue;
+    width: 70px;
+}
+#replayicon{
+    fill: aliceblue;
+    width: 90px;
+}
+#startBtn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 200px;
+    width: 700px;
+    background-color: rgb(91, 184, 131);
+    color: var(--white);
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid 20px rgb(91, 184, 131);
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.347);
+    
+}
+#startBtn:hover{
+    background-color: var(--green);
+
+}
+#startBtn:active{
+    background-color: rgb(42, 189, 162) ;
+
+} 
+#wins-paragraph{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 150px;
+    padding-top: 28px;
+    position: absolute;
+    left: 750px;
+    width: 500px;
+    height: 70px;
+}
+#wins{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 70px;
+    padding-top: 55px;
+    width: 70px;
+    position: absolute;
+    left: 1000px;
+
+}
+#clicks-paragraph{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 150px;
+    padding-top: 28px;
+    position: absolute;
+    left: 400px;
+    width: 500px;
+    height: 70px;
+
+}
+#clicks{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 70px;
+    padding-top: 55px;
+    width: 70px;
+    position: absolute;
+    left: 680px;
+}
+#score-paraghraph{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 150px;
+    padding-top: 50px;
+
+}
+#score{
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 70px;
+    padding-top: 55px;
+    width: 70px;
+}
+#score-pannel{
+    margin-top: 60px;
+    margin-bottom: -50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+#contenair{
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    margin-top: 150px;
+    padding: 50px;
+    gap: 200px;
+}
+
+.cell{
+    position: relative;
+    cursor: pointer;
+    width: 500px;
+
+}
+.front{
+    position: absolute;
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    transform: rotateY(90deg);
+}
+.back{
+    background-color: rgb(52, 123, 185);
+    width: 500px;
+    height: 500px;
+    top: 0%;
+    left: 0%;
+    
+}
+.flip{
+    transform: rotateY(0deg);
+}
+.match{
+    transform: rotateY(0deg);
+
+}
+.showCards{
+    transform: rotateY(0deg);
+
+}
+#win{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 2200px;
+    width: 2500px;
+    background-color: rgba(240, 248, 255, 0.058);
+    backdrop-filter: blur(50px) ;
+    z-index: 1;
+}
+#win-paragraph{
+    color: aliceblue;
+    font-size: 200px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#start-paragraph{
+    color: aliceblue;
+    width: 1340px;
+    word-spacing: 40px;
+    letter-spacing: 10px;
+    font-size: 150px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#replay{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 200px;
+    width: 700px;
+    background-color: rgb(91, 184, 131);
+    color: var(--white);
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: solid 20px rgb(91, 184, 131);
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.347);
+    
+}
+#replay:hover{
+    background-color: var(--green);
+
+}
+#replay:active{
+    background-color: rgb(42, 189, 162) ;
+
+}
